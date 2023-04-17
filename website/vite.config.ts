@@ -1,11 +1,9 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import type { UserConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 
-const config: UserConfig = {
+export default defineConfig({
 	plugins: [sveltekit()],
-	ssr: {
-		noExternal: ['three', 'troika-three-text']
+	test: {
+		include: ['src/**/*.{test,spec}.{js,ts}']
 	}
-};
-
-export default config;
+});
