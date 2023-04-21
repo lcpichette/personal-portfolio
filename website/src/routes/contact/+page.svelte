@@ -64,7 +64,7 @@
                 class="contact-field">
               <label for="first-name">First name<sup>*</sup></label>
             </div>
-            <div class="flex flex-col-reverse gap-y-2">
+            <div class="flex flex-col-reverse gap-y-2 md:mb-6">
               <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="contact-field">
               <label for="last-name">Last name</label>
             </div>
@@ -113,7 +113,7 @@
               <label for="email">Email<sup>*</sup></label>
               
             </div>
-            <div class="flex flex-col-reverse gap-y-2">
+            <div class="flex flex-col-reverse gap-y-2 md:mb-6">
               <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="contact-field">
               <label for="phone-number" >Phone number</label>
             </div>
