@@ -15,7 +15,7 @@
 </svelte:head>
 
 <div class="h-screen min-h-[620px] flex items-center grid grid-cols-12">
-  <div class="about col-span-12 lg:col-span-8 2xl:col-span-7 h-full">
+  <div class="about col-span-12 lg:col-span-8 h-full">
     <div class="grid grid-rows-6 h-full pt-20">
       <section class="row-span-4 h-full site-margins">
         <div class="h-full flex flex-col justify-center">
@@ -69,37 +69,7 @@
     </div>
   </div>
   {#if headshots}
-    <div class="hidden 2xl:flex 2xl:col-span-1 pt-32 pb-20 px-4 box-border w-full h-full text-2xl bg-slate-300 flex flex-col justify-between relative">
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-aws"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-square-js"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-html5"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-css3-alt"></i>
-      </div>
-    </div>
    
-    <div style={`background-image:url("${headshots['imageLarge'].url}")`} class="hidden lg:block 2xl:hidden col-span-4 bg-slate-300 w-full h-full bg-no-repeat bg-center bg-contain"></div>
-    <div style={`background-image:url("${headshots['imageExtraLarge'].url}")`} class="hidden 2xl:block col-span-3 bg-slate-300 w-full h-full bg-no-repeat bg-center bg-contain"></div>
-    
-    <div class="hidden 2xl:flex 2xl:col-span-1 pt-32 pb-20 h-full text-2xl l bg-slate-300 flex-col justify-between relative">
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-sass"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-git-alt"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-node"></i>
-      </div>
-      <div class="w-20 h-20 rounded-full flex justify-center items-center shadow-lg bg-slate-200">
-        <i class="fa-brands fa-figma"></i>
-      </div>
-    </div>
+    <div style={`background-image:url("${headshots['imageLarge'].url}")`} class="hidden lg:block col-span-4 bg-slate-300 w-full h-full bg-no-repeat bg-center bg-contain"></div>
   {/if}
 </div>
