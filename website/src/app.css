@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-color: theme('colors.slate.100');
+    color: theme('colors.slate.800');
+    font-family: 'League Spartan', sans-serif;
+    @apply text-[16px] xl:text-[18px] transition-all;
+}
+* {
+    box-sizing: border-box;
+}
+
+.site-margins {
+    @apply px-7 md:px-16 lg:px-20 xl:px-24;
+}
+
+.hint {
+    background-color: theme('colors.yellow.100');
+    padding: 6px 12px;
+    font-style: italic;
+    margin: 2px 0;
+}
+.hint::before {
+    content: "Hint: ";
+    font-weight: 600;
+    font-style: normal;
+}
+@keyframes bang {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+i.confetti {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
+}
+
+.hover-underline {
+    display: inline-block;
+    position: relative;
+    color: theme('colors.slate.800');
+}
+.hover-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 2px;
+    left: 0;
+    background-color: theme('colors.slate.800');
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.hover-target:hover .hover-underline::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
