@@ -125,7 +125,7 @@
           </div>
         </div>
         <div class="mt-8 flex justify-center">
-          <button class='bg-red-700 disabled:bg-red-700/40 disabled:cursor-default cursor-pointer text-slate-100 p-4' href='/catalog' bind:this={submitButton} on:click={() => form.submit()} disabled>
+          <button class='bg-red-700 disabled:bg-red-700/40 disabled:cursor-default cursor-pointer text-slate-100 p-4' bind:this={submitButton} on:click={() => form.submit()} disabled>
             <span class="translate-y-[2px] flex items-center gap-2">
               <span>Shoot Message</span>
               <i class="fa-sharp fa-solid fa-arrow-up-right"></i>
