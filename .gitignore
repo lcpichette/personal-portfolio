@@ -102,3 +102,17 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Misc
+.DS_Store
+.gitignore.swp
+aws.xml
+workspace.xml
+encodings.xml
+indexLayout.xml
+prettier.xml
+vcs.xml
+codeStyleConfig.xml
+Project.xml
+Project_Default.xml
+
