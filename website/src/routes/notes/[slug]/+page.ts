@@ -1,6 +1,7 @@
 import { GraphQLClient } from "graphql-request";
 
-/** @type {import('./$types').PageLoad} */
+export const prerender = false;
+
 export async function load({ fetch, params }) {
   const hygraph = new GraphQLClient(
     "https://us-west-2.cdn.hygraph.com/content/clgpz5qi40u9n01rrh0w6hz8i/master",
