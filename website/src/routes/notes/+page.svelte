@@ -106,10 +106,10 @@
         <hr class='mb-8 bg-slate-300 h-[2px]'>
 
         <div class='flex flex-col mb-10'>
-            <input type='text' bind:value={searchValue} placeholder={searchbarPlaceholders[Math.floor(Math.random() * searchbarPlaceholders.length)]} class='bg-slate-300 rounded-lg w-full border border-slate-400 mb-3'>
+            <input type='text' bind:value={searchValue} placeholder={searchbarPlaceholders[Math.floor(Math.random() * searchbarPlaceholders.length)]} class='bg-slate-200 w-full border border-slate-300 mb-3'>
             <div>
                 {#each tags as tag}
-                    <button class={`${searchValue.toLowerCase().includes(tag.toLowerCase()) ? 'bg-slate-700 text-slate-200' : 'bg-slate-300 text-slate-800' } px-4 py-2 rounded-full mr-2 mb-2`} on:click={() => searchValue = tag}>{tag}</button>
+                    <button class={`${searchValue.toLowerCase().includes(tag.toLowerCase()) ? 'bg-slate-700 text-slate-200' : 'bg-slate-200 text-slate-700' } px-4 border border-slate-300 py-2 mr-2 mb-2`} on:click={() => searchValue = tag}>{tag}</button>
                 {/each}
             </div>
         </div>

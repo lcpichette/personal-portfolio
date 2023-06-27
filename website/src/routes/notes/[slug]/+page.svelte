@@ -18,7 +18,7 @@
         
         <div class='tags flex gap-x-4 flex-wrap'>
             {#each note?.tags as tag}
-                <span class='py-[7px] px-4 border-2 border-slate-400 text-slate-500 font-bold rounded-xl'>{tag}</span>
+                <span class='py-[7px] px-4 border border-slate-300 mr-2 mb-2 text-slate-700'>{tag}</span>
             {/each}
         </div>
     </div>
