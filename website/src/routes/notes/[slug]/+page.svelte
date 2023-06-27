@@ -64,7 +64,7 @@
     :global(section.note pre) {
         @apply bg-slate-800 text-slate-100 my-4 p-4 rounded-lg;
     }
-    :global(section.note p code) {
+    :global(section.note p code, section.note li code) {
         @apply text-base bg-slate-300 rounded-md p-1;
     }
     :global(section.note blockquote) {
