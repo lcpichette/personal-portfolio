@@ -37,6 +37,9 @@
       <span class="hover-underline">Projects</span>
       <i class:rotate-180={showProjects} class="fa-solid fa-caret-down text-xs text-red-700 transition-all duration-1000"></i>
     </button>
+    <a href="/notes" class="px-4 py-1 hover-target">
+      <span class="hover-underline">Notes</span>
+    </a>
     <a href="/about" class="px-4 py-1 hover-target">
       <span class="hover-underline">About</span>
     </a>

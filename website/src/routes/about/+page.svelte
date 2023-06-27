@@ -1,6 +1,6 @@
-<section class="mx-auto px-8 shadow-lg pt-32 pb-12 min-h-screen max-w-2xl">
+<section class="mx-auto px-8 shadow-lg pt-32 pb-12 min-h-screen max-w-3xl">
     <h1 class="text-4xl font-bold">About Lucas...</h1>
-    <p>You've likely already seen my resume, so here's some information that you <i>haven't</i> read yet.</p>
+    <p>You've likely already reviewed my resume, so here's some information that you <i>haven't</i> read yet.</p>
     <h2 class="text-3xl font-bold pt-4">Professionally</h2>
     <p class="text-gray-700 pb-2">
         In college my ramen and education was funded by Amazon. I started as a Warehouse Associate, became an Area Manager, and then became a Data Analyst once people in the warehouse saw how useful automation can be!
